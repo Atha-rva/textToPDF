@@ -1,0 +1,449 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for EditorJS */
+.codex-editor {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.codex-editor__redactor {
+  padding: 0 !important;
+}
+
+.ce-block__content {
+  margin: 0 !important;
+  padding: 8px 0 !important;
+}
+
+.ce-paragraph {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+}
+
+.ce-header {
+  font-weight: 600 !important;
+}
+
+.ce-toolbar__content {
+  max-width: none !important;
+}
+
+.ce-toolbar__actions {
+  right: 0 !important;
+}
+
+/* Custom tool styles */
+.note-tool {
+  padding: 12px;
+  border-radius: 8px;
+  margin: 8px 0;
+  border: 1px solid;
+}
+
+.note-info {
+  background-color: #eff6ff;
+  border-color: #3b82f6;
+}
+
+.note-warning {
+  background-color: #fffbeb;
+  border-color: #f59e0b;
+}
+
+.note-success {
+  background-color: #f0fdf4;
+  border-color: #10b981;
+}
+
+.note-tool select {
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.note-tool textarea {
+  width: 100%;
+  min-height: 60px;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.section-break-tool {
+  margin: 16px 0;
+}
+
+.section-break-tool input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.section-break-tool hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #3b82f6, #1d4ed8);
+  margin: 8px 0;
+}
+
+.align-text-tool select,
+.color-text-tool input[type="color"] {
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+
+.align-text-tool textarea,
+.color-text-tool textarea {
+  width: 100%;
+  min-height: 60px;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.progress-bar-tool {
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.progress-bar-tool input[type="range"] {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.progress-bar-tool input[type="color"] {
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+.progress-container {
+  margin: 8px 0;
+}
+
+.math-tool textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  resize: vertical;
+}
+
+.image-tool {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+}
+
+.image-tool input[type="file"] {
+  margin-bottom: 8px;
+}
+
+.image-tool input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+
+.image-tool img {
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+/* New tool styles */
+.checklist-tool {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.checklist-item input[type="checkbox"] {
+  margin: 0;
+}
+
+.checklist-item input[type="text"] {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.delete-checklist-item {
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-checklist-item {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.callout-tool {
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px 0;
+}
+
+.callout-info {
+  background-color: #eff6ff;
+  border-color: #3b82f6;
+}
+
+.callout-warning {
+  background-color: #fffbeb;
+  border-color: #f59e0b;
+}
+
+.callout-success {
+  background-color: #f0fdf4;
+  border-color: #10b981;
+}
+
+.callout-error {
+  background-color: #fef2f2;
+  border-color: #ef4444;
+}
+
+.callout-tool select {
+  margin-bottom: 8px;
+  padding: 6px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px;
+}
+
+.callout-tool input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.callout-tool textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.button-tool {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+}
+
+.button-tool input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.button-tool select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  background-color: white;
+  font-size: 14px;
+}
+
+.button-preview {
+  display: flex;
+  justify-content: center;
+}
+
+.button-preview-element {
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 2px solid;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button-preview-element.primary {
+  background-color: #3b82f6;
+  border-color: #2563eb;
+  color: white;
+}
+
+.button-preview-element.secondary {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+  color: #374151;
+}
+
+.button-preview-element:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Scrollbar styling */
+.codex-editor::-webkit-scrollbar {
+  width: 8px;
+}
+
+.codex-editor::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.codex-editor::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.codex-editor::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Rich Text Editor Styles */
+.rich-text-editor .ql-editor {
+  min-height: 400px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.rich-text-editor .ql-toolbar {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px;
+}
+
+.rich-text-editor .ql-container {
+  border: none;
+  font-family: inherit;
+}
+
+.rich-text-editor.dark-theme .ql-toolbar {
+  background-color: #374151;
+  border-bottom-color: #4b5563;
+}
+
+.rich-text-editor.dark-theme .ql-editor {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+.rich-text-editor.dark-theme .ql-stroke {
+  stroke: #9ca3af;
+}
+
+.rich-text-editor.dark-theme .ql-fill {
+  fill: #9ca3af;
+}
+
+.rich-text-editor.dark-theme .ql-picker-label {
+  color: #9ca3af;
+}
+
+.rich-text-editor.dark-theme .ql-picker-options {
+  background-color: #374151;
+  border-color: #4b5563;
+}
+
+.rich-text-editor.dark-theme .ql-picker-item {
+  color: #f9fafb;
+}
+
+.rich-text-editor.dark-theme .ql-picker-item:hover {
+  background-color: #4b5563;
+}
+
+/* Custom toolbar button styles */
+.rich-text-editor .ql-toolbar .ql-formats {
+  margin-right: 15px;
+}
+
+.rich-text-editor .ql-toolbar button {
+  padding: 6px;
+  margin: 2px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.rich-text-editor .ql-toolbar button:hover {
+  background-color: #f3f4f6;
+}
+
+.rich-text-editor.dark-theme .ql-toolbar button:hover {
+  background-color: #4b5563;
+}
+
+.rich-text-editor .ql-toolbar button.ql-active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.rich-text-editor .ql-toolbar .ql-picker {
+  color: inherit;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rich-text-editor .ql-toolbar {
+    padding: 8px;
+  }
+  
+  .rich-text-editor .ql-toolbar .ql-formats {
+    margin-right: 8px;
+  }
+}
